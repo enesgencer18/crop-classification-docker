@@ -25,7 +25,7 @@ RUN mkdir geemap && \
 COPY /tests/test.py /tests
 COPY /tests/run_tests.sh /tests
 
-# Giving permission to tests to run
+# Giving permission to tests to run 
 RUN chmod +x /tests/test.py && \
     chmod +x /tests/run_tests.sh
 
