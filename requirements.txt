@@ -1,0 +1,28 @@
+jupyter
+jupyterlab
+numpy==1.22.4
+scipy
+matplotlib
+opencv-contrib-python
+scikit-image
+scikit-learn==1.0.2
+sentinelhub
+fiona==1.8.21
+shapely==1.8.2
+geopandas==0.10.2
+rasterio==1.2.10
+tifffile
+branca==0.3.1
+pandas==1.4.2
+whitebox
+xarray
+rioxarray==0.11.1
+
+# testing requirements
+pytest>=6.2.3,<6.3.0
+
+# repo maintenance tooling
+black==20.8b1
+flake8>=3.9.0,<3.10.0
+mypy==0.812
+isort==5.8.0
