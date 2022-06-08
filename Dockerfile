@@ -22,11 +22,11 @@ RUN mkdir geemap && \
     mkdir tests
 
 # Copying tests
-COPY /tests/test_geemap.py /tests
+COPY /tests/test.py /tests
 COPY /tests/run_tests.sh /tests
 
 # Giving permission to tests to run
-RUN chmod +x /tests/test_geemap.py && \
+RUN chmod +x /tests/test.py && \
     chmod +x /tests/run_tests.sh
 
 WORKDIR "crop-classification-docker"
