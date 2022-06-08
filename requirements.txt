@@ -17,6 +17,12 @@ pandas==1.4.2
 whitebox
 xarray
 rioxarray==0.11.1
+pathlib
+typing
+pydantic 
+strictyaml
+functools
+logging
 
 # testing requirements
 pytest>=6.2.3,<6.3.0
