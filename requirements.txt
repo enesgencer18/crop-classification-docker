@@ -22,7 +22,6 @@ typing
 pydantic 
 strictyaml
 
-
 # testing requirements
 pytest>=6.2.3,<6.3.0
 
