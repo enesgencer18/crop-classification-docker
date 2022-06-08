@@ -21,7 +21,6 @@ pathlib
 typing
 pydantic 
 strictyaml
-functools
 logging
 
 # testing requirements
