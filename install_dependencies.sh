@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "
-This script is for installing dependencies for geemap docker
+This script is for installing dependencies for crop classification docker
 "
 
 package_list=(
