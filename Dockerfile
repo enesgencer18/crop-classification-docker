@@ -18,7 +18,7 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
     pip3 --no-cache-dir install -r requirements.txt
 	
 # Making home & test folders
-RUN mkdir geemap && \
+RUN mkdir crop-classification && \
     mkdir tests
 
 # Copying tests
