@@ -23,7 +23,6 @@ multiprocess
 catboost
 boto3
 hyperopt
-shutil
 subprocess
 
 # testing requirements
