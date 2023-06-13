@@ -6,16 +6,17 @@ COPY install_dependencies.sh /
 RUN chmod +x /install_dependencies.sh
 
 # install dependencies - making some changes here to test 
-RUN ./install_dependencies.sh && \
-    apt-get update && \
-    /usr/bin/python3 -m pip install --upgrade pip
+#RUN ./install_dependencies.sh && \
+    #apt-get update && \
+    #/usr/bin/python3 -m pip install --upgrade pip
 
 # install python package
 COPY requirements.txt /
-RUN pip --no-cache-dir install --upgrade setuptools && \
-    pip --no-cache-dir install wheel && \
-    pip --no-cache-dir install -r requirements.txt
-	
+RUN pip --no-cache-dir install -r requirements.txt
+
+#pip --no-cache-dir install --upgrade setuptools && \
+#pip --no-cache-dir install wheel && \
+    	
 # Making home & test folders
 RUN mkdir crop-classification && \
     mkdir tests
