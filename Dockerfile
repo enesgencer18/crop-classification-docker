@@ -1,5 +1,5 @@
 # FROM python:3.9.16-slim
-FROM python:3.9.16
+FROM python:3.9.16 
 
 # Copying install_dependencies.sh & give permissions
 COPY install_dependencies.sh /
