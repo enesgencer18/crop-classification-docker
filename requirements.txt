@@ -23,7 +23,7 @@ multiprocess
 catboost
 boto3
 hyperopt
-subprocess
+
 
 # testing requirements
 pytest>=6.2.3,<6.3.0
