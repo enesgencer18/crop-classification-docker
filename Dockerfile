@@ -1,6 +1,5 @@
-FROM ubuntu:22.04
-ENV LANG=C.UTF-8
-ENV DEBIAN_FRONTEND=noninteractive
+# FROM python:3.9.16-slim
+FROM python:3.9.16
 
 # Copying install_dependencies.sh & give permissions
 COPY install_dependencies.sh /
@@ -13,9 +12,9 @@ RUN ./install_dependencies.sh && \
 
 # install python package
 COPY requirements.txt /
-RUN pip3 --no-cache-dir install --upgrade setuptools && \
-    pip3 --no-cache-dir install wheel && \
-    pip3 --no-cache-dir install -r requirements.txt
+RUN pip --no-cache-dir install --upgrade setuptools && \
+    pip --no-cache-dir install wheel && \
+    pip --no-cache-dir install -r requirements.txt
 	
 # Making home & test folders
 RUN mkdir crop-classification && \
