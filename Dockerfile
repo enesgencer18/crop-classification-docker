@@ -29,4 +29,4 @@ COPY /tests/run_tests.sh /tests
 RUN chmod +x /tests/test.py && \
     chmod +x /tests/run_tests.sh
 
-WORKDIR "crop-classification-docker"
+WORKDIR "crop-classification-docker" 
